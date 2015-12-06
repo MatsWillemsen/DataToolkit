@@ -1,0 +1,31 @@
+
+.dataline {
+  fill: none;
+  stroke: blue;
+  stroke-width: 1.5;
+}
+
+.axis path, .axis line {
+  fill: none;
+  stroke: black;
+  stroke-width: 1;
+  shape-rendering: crispEdges;
+}
+.overlay {
+  fill: none;
+  stroke: none;
+  pointer-events: all;
+}
+.crosshair {
+  fill: none;
+  stroke: blue;
+  stroke-width: 1;
+}
+.tooltip {
+  position: absolute;
+  left: 50px;
+  border-radius: 2px;
+  border: 1px solid black;
+  padding: 5px;
+  opacity: 0
+}

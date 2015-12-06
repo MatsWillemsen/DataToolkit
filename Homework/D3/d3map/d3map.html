@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/d3map.css" media="screen" title="main css" charset="utf-8">
+</head>
+<body>
+  <h1>Population of the world</h1>
+  <div id="datamap" style="width: 1024px; height: 768px;">
+
+  </div>
+  <div id="comment">
+    <p>
+      For this visualisation, I added a mouseover-effect to the map (via geography.popupTemplate) with live population
+      data from restcountries.eu. I made sure to divide the countries in fairly equal categories (in total country size), except for the largest countries.
+      For this, I used the chroma YlGnBu-scale, to make sure that the colors can be read in their correct order.
+      This map allows the user to globally explore the world, and see where the large countries (and small countries) are, and compare the populations of two countries.
+    </p>
+  </div>
+  <script src="js/d3.js" charset="utf-8"></script>
+  <script src="http://d3js.org/topojson.v1.min.js"></script>
+  <script src="js/datamaps.world.min.js" charset="utf-8"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/1.1.1/chroma.min.js" charset="utf-8"></script>
+  <script src="js/d3map.js" charset="utf-8"></script>
+</body>
+</html>
