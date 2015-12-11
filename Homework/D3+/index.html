@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dc/2.0.0-beta.23/dc.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <nav class="navbar navbar-light bg-faded">
+        <a class="navbar-brand" href="#">International Trade</a>
+        <ul class="nav navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav pull-right">
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="modal" data-target="#aboutModal">About</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="row">
+      <h1 class="text-center">Summary of import/export between 1948-2001</h1>
+
+      <p class="text-center loading"><i class="fa fa-spinner fa-spin fa-5x"></i></p>
+      <div id="map" class="col-xs-12">
+
+      </div>
+    </div>
+    <div class="row">
+      <h3 class="text-center">Total import/export numbers for <span class="country">all countries</span></h3>
+      <div id="stackedChart" class="col-xs-12">
+
+      </div>
+      <div id="yearChart" class="col-xs-12">
+
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="aboutModal">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h4 class="modal-title">Uitleg van de visualisatie</h4>
+        </div>
+        <div class="modal-body">
+          <p class="lead">Hoe gebruik je deze visualisatie?</p>
+          <p>Het is heel simpel. Klik op een land om de top 15 import- en exportlanden te tonen. De grafieken worden automatisch bijgewerkt op basis van het gekozen land</p>
+          <p>Via de onderste bar-chart kan er een filter worden gemaakt op basis van een tijdsspan. De line-graph wordt vervolgens automatisch aangepast op basis van deze filter.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js" charset="utf-8"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha/js/bootstrap.min.js" charset="utf-8"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.10/d3.min.js" charset="utf-8"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.19/topojson.min.js" charset="utf-8"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crossfilter/1.3.12/crossfilter.js" charset="utf-8"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dc/2.0.0-beta.23/dc.min.js" charset="utf-8"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/1.1.1/chroma.min.js" charset="utf-8"></script>
+  <script src="js/datamaps.min.js" charset="utf-8"></script>
+  <script src="js/script.js" charset="utf-8"></script>
+</body>
+</html>
