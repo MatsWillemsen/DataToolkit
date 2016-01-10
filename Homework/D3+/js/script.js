@@ -105,7 +105,7 @@ d3.json('https://restcountries.eu/rest/v1/all', function(error, data) {
                         dc.lineChart(linegraph) // eerste lijn toevoegen aan de grafiek (export-lijn)
                           .colors('red')
                           .group(exportsPerYear, 'Total yearly exports')
-                          .valueAccessor(function(d) { return d.value }) // d.value is het resultaat van de MapReduce-functie,
+                          .valueAccessor(function(d) { return d.value }),  // d.value is het resultaat van de MapReduce-functie,
                         dc.lineChart(linegraph)
                           .colors('blue')
                           .group(importsPerYear, 'Total yearly imports')
